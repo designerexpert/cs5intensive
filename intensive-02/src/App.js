@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Second stuff='Blanky' id='mainBlanky' />
+        {/* <Second stuff='Blanky' id='mainBlanky' /> */}
         <Third />
         <Fourth />
         <Fifth />

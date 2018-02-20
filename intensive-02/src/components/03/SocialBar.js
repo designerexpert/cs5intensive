@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Comment from './Comment';
 
 export default class SocialBar extends Component {
     constructor() {
@@ -11,7 +12,12 @@ export default class SocialBar extends Component {
 
     render() {
         return (
-            <div className='greeting'>{'SocialBar'}</div>
+            <div className='socialBar'>
+                <div>{`${this.props.retweets} Retweets`}</div>
+                <div>{" | "}</div>
+                <div>{`${this.props.likes} Likes`}</div>
+                <div>{`Followers: ${this.props.followers}`}</div>
+            </div>
         );
     }
 }

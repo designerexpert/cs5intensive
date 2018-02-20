@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
-
-class ClassComponent extends Component {
-  constructor() {
-    super();
-    this.state = {
-
-    }
-  }
-  componentDidMount() {
-    this.setState({ blanket: this.props.blanket });
-  }
-  render() {
-    return (
-      <div className='greeting'>{`Hello, my blanket is called: ${this.state.blanket}`}</div>
-    );
-  }
-}
+import Second from './components/02'; // Component with Props from Parent.
+import Third from './components/03'; // Component with State + Nested Children.
+import Fourth from './components/04';
+import Fifth from './components/05';
+import Sixth from './components/06';
+import Seventh from './components/07';
+import Eighth from './components/08';
+import Ninth from './components/09';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ClassComponent blanket={'Blanky'} />
+        <Second stuff='Blanky' id='mainBlanky' />
+        <Third />
+        <Fourth />
+        <Fifth />
+        <Sixth />
+        <Seventh />
+        <Eighth />
+        <Ninth />
       </div>
     );
   }

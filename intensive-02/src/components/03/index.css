@@ -1,0 +1,40 @@
+.twitterPost {
+    display: flex;
+    flex-direction: column;
+    width: 24em;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.followButton {
+    text-align: center;
+    height: 2.5em;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid blue;
+    border-radius: 2em;
+}
+
+.userBar {
+    width: 24em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 24em;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.userLogo {
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+}
+
+.userNameSection {
+    display: flex;
+    flex-direction: column;
+}
